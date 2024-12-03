@@ -7,7 +7,7 @@ categories: demo
 
 Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
 
-I am adding a test sentence here at 13:24 on 03/12/24.
+I'm Anthony Johnson and this is my blog for my SoC 3rd year project. I will recreate a ying yang as a VGA image using Vivado code
 
 ## **Template VGA Design**
 ### **Project Set-Up**
