@@ -28,8 +28,8 @@ The design I choose for my VGA design is a Yin-Yang. Ying and Yang is a chinese 
 //ENTER PICTURE OF YIN YANG
 
 At first glance this design is complex due to it's circular nature and seemingly abstract swirls inside the circle. I asked ChatGPT to give me code for a Yin-Yang VGA image but to no avail.
-//ENTER FIRST CHATGPT PICTURE 
-<img src="
+
+<img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/GPT%20Image.jpeg">
 
 
 Although this was no success it was some help. (col - C3_X) * (col - C3_X) + (row - C3_Y) * (row - C3_Y)) <= C3_R * C3_R).
