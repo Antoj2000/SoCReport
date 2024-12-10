@@ -46,7 +46,8 @@ The 5th Circle is just one large circle split into black and white.
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 
-Layers are added using top to bottom using if else statements
+Layers are added top to bottom using if else statements. 
+
 
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
