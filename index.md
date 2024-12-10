@@ -32,17 +32,21 @@ At first glance this design is complex due to it's circular nature and seemingly
 <img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/GPT%20Image.jpeg">
 
 
-Although this was no success it was some help. (col - C3_X) * (col - C3_X) + (row - C3_Y) * (row - C3_Y)) <= C3_R * C3_R).
-From this equation (equation of a circle) I was able to learn how to colour every pixel that resided inside the cicle what ever colour I wanted. Upon further inspection of the Yin-Yang on my screen and the new found knowledge fresh in my mind, I was able to deduce that the Yin-Yang symbol could easily be drawn by 5 circles in 3 layers. 
-//ENTER COPY PICTURE 
+Although this was no success it was some help. (col - C3_X) * (col - C3_X) + (row - C3_Y) * (row - C3_Y)) <= C3_R * C3_R). This equation was littered through the code it gave me.
+From this equation (equation of a circle) I was able to learn how to colour every pixel that resided inside the cicle what ever colour I wanted. (x,y) are the co-ordinated of the center of the circle and the 'r' is the desired radius.
 
-<img src"
+Upon further inspection of the Yin-Yang on my screen and the new found knowledge fresh in my mind, I was able to deduce that the Yin-Yang symbol could easily be drawn by 5 circles in 3 layers. 
+
+
+<img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/Copy.jpg">
 
 
 The 5th Circle is just one large circle split into black and white.
 
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
+
+Layers are added using top to bottom using if else statements
 
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
