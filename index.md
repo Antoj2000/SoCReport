@@ -36,6 +36,8 @@ Although this was no success it was some help. (col - C3_X) * (col - C3_X) + (ro
 From this equation (equation of a circle) I was able to learn how to colour every pixel that resided inside the cicle what ever colour I wanted. Upon further inspection of the Yin-Yang on my screen and the new found knowledge fresh in my mind, I was able to deduce that the Yin-Yang symbol could easily be drawn by 5 circles in 3 layers. 
 //ENTER COPY PICTURE 
 
+<img src"
+
 
 The 5th Circle is just one large circle split into black and white.
 
