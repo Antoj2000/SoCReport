@@ -9,22 +9,30 @@ I'm Anthony Johnson and this is my blog for my SoC 3rd year project. I will recr
 ## **Template VGA Design**
 ### **Project Set-Up**
 Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
-
+//PUT IN PROJECT SUMMARY PIC
+ 
 
 <img src="">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 
-The verilog code that was give to us was a colour cycle code, this code cycled through
+For this System on Chip project we were given two code templates that both demostrated different VGA images.
+The first verilog code that was given to us was a colour cycle code. This code cycled through 8 different colours that switched the colour of the screen accordingly. 
+
+The second code, and the the one I used for the base of my project, was Colour Stripes. Colour stripes split the screen into rows and columns and uses if else statements to colour each column accordingly.
+
+
 ### **Simulation**
-Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
-### **Synthesis**
-Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
-### **Demonstration**
-Perhaps add a picture of your demo. Guideline: 1/2 sentences.
+Simulation involves verifying the functionality of your design before deploying it to hardware. 
+
+This process begins with writing a testbench that simulates input signals such as pixel clock, horizontal sync (ROW), and vertical sync (COL). These signals drive your design, allowing the simulation to produce outputs for verification. The simulation ensures that the design splits the VGA display into columns and rows.
+
+### **Synthesis and Implementation
+Synthesis converts your HDL code into a gate-level representation, optimizing it for the target FPGA. During this step, the tool checks for syntax correctness, maps the design to logical components, and ensures compatibility with the FPGA's architecture. Synthesis ensures the timing and logic for generating sync signals and RGB outputs are correctly translated into FPGA resources.
+
+After synthesis, implementation maps the design to the physical resources of the FPGA. This includes placing and routing the logic to ensure the design meets timing constraints, particularly for the VGA's pixel clock and synchronization requirements. Once implementation is complete, a .bit file is generated, which can be programmed onto the FPGA to verify the VGA display functionality on hardware.
 
 ## **My VGA Design Edit**
-Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
 
 The design I choose for my VGA design is a Yin-Yang. Ying and Yang is a chinese concept describing an opposite but interconnected, self-perpetuating cycle. Yin and yang can be thought of as complementary and at the same time opposing forces that interact to form a dynamic system in which the whole is greater than the assembled parts and the parts are important for cohesion of the whole.  //ENTER REFERENCE , WIKI 
 <img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/YinYangGoogle.png">
