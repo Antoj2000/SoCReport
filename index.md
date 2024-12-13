@@ -9,12 +9,10 @@ I'm Anthony Johnson and this is my blog for my SoC 3rd year project. I will recr
 ## **Template VGA Design**
 ### **Project Set-Up**
 Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
-//PUT IN PROJECT SUMMARY PIC
 
 
- <img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/blob/main/docs/assets/images/ProSum.png"> 
- <img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/ProSum.png"
-
+ <img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/ProSum.png"> 
+ 
  
 ### **Template Code**
 
@@ -39,12 +37,11 @@ After synthesis, implementation maps the design to the physical resources of the
 ## **My VGA Design Edit**
 
 The design I choose for my VGA design is a Yin-Yang. Ying and Yang is a chinese concept describing an opposite but interconnected, self-perpetuating cycle. Yin and yang can be thought of as complementary and at the same time opposing forces that interact to form a dynamic system in which the whole is greater than the assembled parts and the parts are important for cohesion of the whole.  //ENTER REFERENCE , WIKI 
-<img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/YinYangGoogle.png">
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/YinYangGoogle.png">
 
 At first glance this design is complex due to it's circular nature and seemingly abstract swirls inside the circle. I asked ChatGPT to give me code for a Yin-Yang VGA image but to no avail.
 
-<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/blob/main/docs/assets/images/GPT%20Image.jpeg">
-
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/GPT%20Image.jpeg">
 
 Although this was no success it was some help. (col - C3_X) * (col - C3_X) + (row - C3_Y) * (row - C3_Y)) <= C3_R * C3_R). This equation was littered through the code it gave me.
 From this equation (equation of a circle) I was able to learn how to colour every pixel that resided inside the cicle what ever colour I wanted. (x,y) are the co-ordinated of the center of the circle and the 'r' is the desired radius.
@@ -52,15 +49,23 @@ From this equation (equation of a circle) I was able to learn how to colour ever
 Upon further inspection of the Yin-Yang on my screen and the new found knowledge fresh in my mind, I was able to deduce that the Yin-Yang symbol could easily be drawn by 5 circles in 3 layers. 
 
 
-<img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/Copy.jpg">
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/Copy.jpg">
 
 
 The 5th Circle is just one large circle split into black and white.
 
-### **Code Adaptation**
-Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
+I think GPT sometimes takes its tasks too literal. When it seen the Yin-Yang it tried to caluclate every pixel exactly and in the end overengineered the code to the point of disaster. This reminds me of a youtube video I recently watched covering Moravec's paradox.
 
-//SHOW MY CODE PIC 
+[Moravec's Paradox](https://youtu.be/raHM3k-uR0E?si=W4r_KTrS3OoV3b70).
+
+
+Moravec's Paradox highlights the surprising difficulty AI and computational systems face with tasks humans find simple, while excelling at complex calculations. For instance, in drawing a yin-yang symbol, an overly engineered solution might involve intricate algorithms or complex logic. In contrast, I deduced a simpler approach using just five circles. This illustrates how humans often solve problems by reframing them in simpler terms, while AI or engineered solutions may lack the creativity or flexibility to see the easier path.
+
+### **Code Adaptation**
+
+Here is a snippet of my final code.
+
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/VGACode.png">
 
 At first I encountered a problem where the circles werent prioritising properly. I quickly realised that they need to be coded from top to bottom using if else statements. 
 I replaced the if else checking columns with an equation checking if a pixel is within a circles boundaries. 
@@ -72,13 +77,16 @@ Show how you simulated your own design. Are there any things to note? Demonstrat
 //PUT IN MY SIMULATED DESIGN PIC 
 
 ### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
-//PUT IN MY OWN SYNTHESIS AND IMPLEMENTAITON PICS
+Here is my Synthesized Design 
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/VGASynthesizedDesign.jpg">
+
+Here is my Implemented Design 
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/VGAImplementedDesign.jpg">
 
 ### **Demonstration**
 Below is my final Ying-Yang design. 
 
-<img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/Yinyang%20completed.jpeg">
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/Yinyang%20completed.jpeg">
 
 ## **More Markdown Basics**
 This is a paragraph. Add an empty line to start a new paragraph.
