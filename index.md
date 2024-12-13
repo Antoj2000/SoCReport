@@ -10,16 +10,19 @@ I'm Anthony Johnson and this is my blog for my SoC 3rd year project. I will recr
 ### **Project Set-Up**
 Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
 //PUT IN PROJECT SUMMARY PIC
- 
+![VGA Diagram](Antoj2000/SoCReport/blob/main/docs/ProSum.png)
 
-<img src="">
+ <img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/blob/main/docs/ProSum.png">
+
+ 
 ### **Template Code**
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+
+A VGA interface works by transmitting analog signals to a monitor to display images. It uses three primary color channels (Red, Green, Blue) for color information and two synchronization signals: horizontal sync (HSYNC) and vertical sync (VSYNC). The pixel clock determines the timing of individual pixels, while the sync signals define the start and end of each line and frame, ensuring proper alignment of the displayed image. The VGA controller in the design generates these signals based on a predefined resolution and refresh rate, creating the desired image on the screen.
 
 For this System on Chip project we were given two code templates that both demostrated different VGA images.
 The first verilog code that was given to us was a colour cycle code. This code cycled through 8 different colours that switched the colour of the screen accordingly. 
 
-The second code, and the the one I used for the base of my project, was Colour Stripes. Colour stripes split the screen into rows and columns and uses if else statements to colour each column accordingly.
+The second code, and the the one I used for the base of my project, was Colour Stripes. Colour Stripes split the screen into rows and columns and uses if else statements to colour each column accordingly. This showed me how to section off areas of the screen and also set pixels to black and white.
 
 
 ### **Simulation**
@@ -56,14 +59,20 @@ The 5th Circle is just one large circle split into black and white.
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 
-Layers are added top to bottom using if else statements. 
+//SHOW MY CODE PIC 
+
+At first I encountered a problem where the circles werent prioritising properly. I quickly realised that they need to be coded from top to bottom using if else statements. 
+I replaced the if else checking columns with an equation checking if a pixel is within a circles boundaries. 
+The colour grey is then called if a pixel is not used in the above equations. This is to close the bigger circle off and make the design clearer.
 
 
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
+//PUT IN MY SIMULATED DESIGN PIC 
 
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+//PUT IN MY OWN SYNTHESIS AND IMPLEMENTAITON PICS
 
 ### **Demonstration**
 Below is my final Ying-Yang design. 
