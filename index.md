@@ -10,9 +10,10 @@ I'm Anthony Johnson and this is my blog for my SoC 3rd year project. I will recr
 ### **Project Set-Up**
 Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
 //PUT IN PROJECT SUMMARY PIC
-![VGA Diagram](Antoj2000/SoCReport/blob/main/docs/ProSum.png)
 
- <img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/blob/main/docs/ProSum.png">
+
+ <img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/blob/main/docs/assets/images/ProSum.png"> 
+ <img src="https://github.com/Antoj2000/SoCReport/blob/main/docs/assets/images/ProSum.png"
 
  
 ### **Template Code**
