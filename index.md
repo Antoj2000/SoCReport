@@ -72,37 +72,16 @@ At first I encountered a problem where the circles werent prioritising properly.
 I replaced the if else checking columns with an equation checking if a pixel is within a circles boundaries. 
 The colour grey is then called if a pixel is not used in the above equations. This is to close the bigger circle off and make the design clearer.
 
-
-### **Simulation**
-Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
-//PUT IN MY SIMULATED DESIGN PIC 
-
 ### **Synthesis**
-Here is my Synthesized Design 
-<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/VGASynthesizedDesign.jpg">
+Here is my Synthesized Design.
 
-Here is my Implemented Design 
-<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/VGAImplementedDesign.jpg">
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/image0.png">
+
+Here is my Implemented Design.
+
+<img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/image1.png">
 
 ### **Demonstration**
 Below is my final Ying-Yang design. 
 
 <img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/Yinyang%20completed.jpeg">
-
-## **More Markdown Basics**
-This is a paragraph. Add an empty line to start a new paragraph.
-
-Font can be emphasised as *Italic* or **Bold**.
-
-Code can be highlighted by using `backticks`.
-
-Hyperlinks look like this: [GitHub Help](https://help.github.com/).
-
-A bullet list can be rendered as follows:
-- vectors
-- algorithms
-- iterators
-
-Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
-
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
