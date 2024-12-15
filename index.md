@@ -8,7 +8,7 @@ I'm Anthony Johnson and this is my blog for my SoC 3rd year project. I will recr
 
 ## **Template VGA Design**
 ### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
+The Vivado project SoCProject targets the Artix-7 xc7a35tcpg236-1 FPGA and uses Verilog as the top-level design language. The project includes synthesis and implementation phases, both of which have completed successfully, despite a couple of warnings. 
 
 
  <img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/ProSum.png"> 
@@ -29,14 +29,15 @@ Simulation involves verifying the functionality of your design before deploying 
 
 This process begins with writing a testbench that simulates input signals such as pixel clock, horizontal sync (ROW), and vertical sync (COL). These signals drive your design, allowing the simulation to produce outputs for verification. The simulation ensures that the design splits the VGA display into columns and rows.
 
-### **Synthesis and Implementation
+### **Synthesis and Implementation**
 Synthesis converts your HDL code into a gate-level representation, optimizing it for the target FPGA. During this step, the tool checks for syntax correctness, maps the design to logical components, and ensures compatibility with the FPGA's architecture. Synthesis ensures the timing and logic for generating sync signals and RGB outputs are correctly translated into FPGA resources.
 
 After synthesis, implementation maps the design to the physical resources of the FPGA. This includes placing and routing the logic to ensure the design meets timing constraints, particularly for the VGA's pixel clock and synchronization requirements. Once implementation is complete, a .bit file is generated, which can be programmed onto the FPGA to verify the VGA display functionality on hardware.
 
 ## **My VGA Design Edit**
 
-The design I choose for my VGA design is a Yin-Yang. Ying and Yang is a chinese concept describing an opposite but interconnected, self-perpetuating cycle. Yin and yang can be thought of as complementary and at the same time opposing forces that interact to form a dynamic system in which the whole is greater than the assembled parts and the parts are important for cohesion of the whole.  //ENTER REFERENCE , WIKI 
+The design I choose for my VGA design is a Yin-Yang. Ying and Yang is a chinese concept describing an opposite but interconnected, self-perpetuating cycle. Yin and yang can be thought of as complementary and at the same time opposing forces that interact to form a dynamic system in which the whole is greater than the assembled parts and the parts are important for cohesion of the whole.   [Yin-Yang Wiki](https://en.wikipedia.org/wiki/Yin_and_yang) 
+
 <img src="https://raw.githubusercontent.com/Antoj2000/SoCReport/main/docs/assets/images/YinYangGoogle.png">
 
 At first glance this design is complex due to it's circular nature and seemingly abstract swirls inside the circle. I asked ChatGPT to give me code for a Yin-Yang VGA image but to no avail.
